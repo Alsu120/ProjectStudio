@@ -1,0 +1,80 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.ShellView">
+  <Grid ColumnDefinitions="248,*">
+    <Border Background="{DynamicResource SidebarBg}"
+            BorderBrush="{DynamicResource CardBorder}"
+            BorderThickness="0,0,1,0"
+            Padding="14,18">
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Spacing="10" Margin="8,0,0,24">
+          <Border Width="28" Height="28" CornerRadius="8" Background="{DynamicResource AccentBrush}">
+            <TextBlock Text="P" Foreground="White" FontWeight="Bold"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+          </Border>
+          <TextBlock Classes="h2" Text="Project Studio" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Bottom" Spacing="2">
+          <Border Classes="sep" Margin="0,0,0,10" />
+          <RadioButton Name="NavProfile" Classes="nav" GroupName="nav" Tag="Profile" Click="Nav_Click">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <Path Classes="icon" Data="{StaticResource IconUser}"
+                    Stroke="{Binding $parent[RadioButton].Foreground}" />
+              <TextBlock Name="UserNameText" FontSize="13" MaxWidth="150"
+                         TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+            </StackPanel>
+          </RadioButton>
+          <Button Classes="flat" Click="Logout_Click">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <Path Classes="icon" Data="{StaticResource IconLogout}"
+                    Stroke="{Binding $parent[Button].Foreground}" />
+              <TextBlock Text="Выйти" FontSize="13" VerticalAlignment="Center" />
+            </StackPanel>
+          </Button>
+        </StackPanel>
+
+        <StackPanel>
+<RadioButton Name="NavOverview" Classes="nav" GroupName="nav" Tag="Overview" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconFolder}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Обзор" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+<RadioButton Name="NavProjects" Classes="nav" GroupName="nav" Tag="Projects" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconFolder}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Проекты" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+<RadioButton Name="NavTasks" Classes="nav" GroupName="nav" Tag="Tasks" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconTasks}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Задачи" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+<RadioButton Name="NavCalendar" Classes="nav" GroupName="nav" Tag="Calendar" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconCalendar}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Календарь" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+<RadioButton Name="NavTeam" Classes="nav" GroupName="nav" Tag="Team" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconUsers}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Команда" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+<RadioButton Name="NavSettings" Classes="nav" GroupName="nav" Tag="Settings" Click="Nav_Click">
+  <StackPanel Orientation="Horizontal" Spacing="12">
+    <Path Classes="icon" Data="{StaticResource IconSettings}" Stroke="{Binding $parent[RadioButton].Foreground}" />
+    <TextBlock Text="Настройки" FontSize="13" VerticalAlignment="Center" />
+  </StackPanel>
+</RadioButton>
+        </StackPanel>
+      </DockPanel>
+    </Border>
+
+    <Border Grid.Column="1" Background="{DynamicResource AppBg}">
+      <ContentControl Name="PageHost" />
+    </Border>
+  </Grid>
+</UserControl>

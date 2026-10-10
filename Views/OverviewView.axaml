@@ -1,0 +1,185 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.OverviewView">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="28" Spacing="20">
+<TextBlock Classes="h1" Text="Обзор" />
+<Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="16">
+<Border Grid.Column="0" Classes="card">
+  <Grid ColumnDefinitions="*,Auto">
+    <StackPanel Spacing="4">
+      <TextBlock Classes="muted" Text="Проекты" />
+      <TextBlock Classes="big" Text="12" />
+      <TextBlock Classes="muted" Text="Активных проектов" />
+    </StackPanel>
+    <Path Grid.Column="1" Classes="icon" VerticalAlignment="Top"
+          Data="{StaticResource IconFolder}" Stroke="{DynamicResource AccentBrush}" />
+  </Grid>
+</Border>
+<Border Grid.Column="1" Classes="card">
+  <Grid ColumnDefinitions="*,Auto">
+    <StackPanel Spacing="4">
+      <TextBlock Classes="muted" Text="Задачи" />
+      <TextBlock Classes="big" Text="48" />
+      <TextBlock Classes="muted" Text="В работе" />
+    </StackPanel>
+    <Path Grid.Column="1" Classes="icon" VerticalAlignment="Top"
+          Data="{StaticResource IconCheckCircle}" Stroke="{DynamicResource SuccessBrush}" />
+  </Grid>
+</Border>
+<Border Grid.Column="2" Classes="card">
+  <Grid ColumnDefinitions="*,Auto">
+    <StackPanel Spacing="4">
+      <TextBlock Classes="muted" Text="Команда" />
+      <TextBlock Classes="big" Text="8" />
+      <TextBlock Classes="muted" Text="Участников" />
+    </StackPanel>
+    <Path Grid.Column="1" Classes="icon" VerticalAlignment="Top"
+          Data="{StaticResource IconUsers}" Stroke="{DynamicResource BlueBrush}" />
+  </Grid>
+</Border>
+<Border Grid.Column="3" Classes="card">
+  <Grid ColumnDefinitions="*,Auto">
+    <StackPanel Spacing="4">
+      <TextBlock Classes="muted" Text="Сроки" />
+      <TextBlock Classes="big" Text="5" Foreground="{DynamicResource DangerBrush}" />
+      <TextBlock Classes="muted" Text="Просрочено" Foreground="{DynamicResource DangerBrush}" />
+    </StackPanel>
+    <Path Grid.Column="1" Classes="icon" VerticalAlignment="Top"
+          Data="{StaticResource IconClock}" Stroke="{DynamicResource DangerBrush}" />
+  </Grid>
+</Border>
+</Grid>
+
+<Grid ColumnDefinitions="*,300" ColumnSpacing="16">
+  <StackPanel Spacing="16">
+    <Border Classes="card">
+      <StackPanel>
+        <TextBlock Classes="h2" Text="Активные проекты" Margin="0,0,0,4" />
+<Grid ColumnDefinitions="*,230" Margin="0,12">
+  <StackPanel Spacing="3" VerticalAlignment="Center">
+    <TextBlock Classes="body" FontWeight="SemiBold" Text="Avalonia UI Redesign" />
+    <TextBlock Classes="muted" Text="Обновлено сегодня" />
+  </StackPanel>
+  <StackPanel Grid.Column="1" Spacing="8">
+    <Border Classes="tag design"><TextBlock Text="Дизайн" /></Border>
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="65" Maximum="100" Foreground="{DynamicResource AccentBrush}" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="65%" HorizontalAlignment="Right" />
+    </Grid>
+  </StackPanel>
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="*,230" Margin="0,12">
+  <StackPanel Spacing="3" VerticalAlignment="Center">
+    <TextBlock Classes="body" FontWeight="SemiBold" Text="Мобильное приложение" />
+    <TextBlock Classes="muted" Text="Обновлено вчера" />
+  </StackPanel>
+  <StackPanel Grid.Column="1" Spacing="8">
+    <Border Classes="tag dev"><TextBlock Text="Разработка" /></Border>
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="40" Maximum="100" Foreground="{DynamicResource BlueBrush}" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="40%" HorizontalAlignment="Right" />
+    </Grid>
+  </StackPanel>
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="*,230" Margin="0,12">
+  <StackPanel Spacing="3" VerticalAlignment="Center">
+    <TextBlock Classes="body" FontWeight="SemiBold" Text="Корпоративный сайт" />
+    <TextBlock Classes="muted" Text="Обновлено 2 дня назад" />
+  </StackPanel>
+  <StackPanel Grid.Column="1" Spacing="8">
+    <Border Classes="tag dev"><TextBlock Text="Разработка" /></Border>
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="80" Maximum="100" Foreground="{DynamicResource GreenBrush}" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="80%" HorizontalAlignment="Right" />
+    </Grid>
+  </StackPanel>
+</Grid>
+      </StackPanel>
+    </Border>
+    <Border Classes="card">
+      <StackPanel>
+        <TextBlock Classes="h2" Text="Последние задачи" Margin="0,0,0,4" />
+<Grid ColumnDefinitions="Auto,*,120,100" Margin="0,10" ColumnSpacing="12">
+  <CheckBox />
+  <TextBlock Grid.Column="1" Classes="body" Text="Разработать макет главной страницы" VerticalAlignment="Center" />
+  <ContentControl Grid.Column="2"><Border Classes="tag design"><TextBlock Text="Дизайн" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" Classes="muted" Text="15.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,100" Margin="0,10" ColumnSpacing="12">
+  <CheckBox />
+  <TextBlock Grid.Column="1" Classes="body" Text="Реализовать авторизацию" VerticalAlignment="Center" />
+  <ContentControl Grid.Column="2"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" Classes="muted" Text="14.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,100" Margin="0,10" ColumnSpacing="12">
+  <CheckBox />
+  <TextBlock Grid.Column="1" Classes="body" Text="Подготовить презентацию" VerticalAlignment="Center" />
+  <ContentControl Grid.Column="2"><Border Classes="tag mark"><TextBlock Text="Маркетинг" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" Classes="muted" Text="13.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+      </StackPanel>
+    </Border>
+  </StackPanel>
+
+  <Border Grid.Column="1" Classes="card" VerticalAlignment="Top">
+    <StackPanel Spacing="8">
+      <TextBlock Classes="h2" Text="Календарь" />
+      <Grid ColumnDefinitions="Auto,*,Auto">
+        <Button Classes="flat" Content="‹" HorizontalAlignment="Left" Padding="10,2" />
+        <TextBlock Grid.Column="1" Classes="body" Text="Май 2024" FontWeight="SemiBold"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button Grid.Column="2" Classes="flat" Content="›" HorizontalAlignment="Right" Padding="10,2" />
+      </Grid>
+      <UniformGrid Columns="7">
+<TextBlock Classes="dayname" Text="Пн" />
+<TextBlock Classes="dayname" Text="Вт" />
+<TextBlock Classes="dayname" Text="Ср" />
+<TextBlock Classes="dayname" Text="Чт" />
+<TextBlock Classes="dayname" Text="Пт" />
+<TextBlock Classes="dayname" Text="Сб" />
+<TextBlock Classes="dayname" Text="Вс" />
+      </UniformGrid>
+      <UniformGrid Columns="7">
+<TextBlock />
+<TextBlock />
+<TextBlock Classes="day" Text="1" />
+<TextBlock Classes="day" Text="2" />
+<TextBlock Classes="day" Text="3" />
+<TextBlock Classes="day" Text="4" />
+<TextBlock Classes="day" Text="5" />
+<TextBlock Classes="day" Text="6" />
+<TextBlock Classes="day" Text="7" />
+<TextBlock Classes="day" Text="8" />
+<TextBlock Classes="day" Text="9" />
+<TextBlock Classes="day" Text="10" />
+<TextBlock Classes="day" Text="11" />
+<TextBlock Classes="day" Text="12" />
+<TextBlock Classes="day" Text="13" />
+<TextBlock Classes="day" Text="14" />
+<Border Classes="today"><TextBlock Text="15" /></Border>
+<TextBlock Classes="day" Text="16" />
+<TextBlock Classes="day" Text="17" />
+<TextBlock Classes="day" Text="18" />
+<TextBlock Classes="day" Text="19" />
+<TextBlock Classes="day" Text="20" />
+<TextBlock Classes="day" Text="21" />
+<TextBlock Classes="day" Text="22" />
+<TextBlock Classes="day" Text="23" />
+<TextBlock Classes="day" Text="24" />
+<TextBlock Classes="day" Text="25" />
+<TextBlock Classes="day" Text="26" />
+<TextBlock Classes="day" Text="27" />
+<TextBlock Classes="day" Text="28" />
+<TextBlock Classes="day" Text="29" />
+<TextBlock Classes="day" Text="30" />
+<TextBlock Classes="day" Text="31" />
+      </UniformGrid>
+    </StackPanel>
+  </Border>
+</Grid>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

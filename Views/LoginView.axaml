@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.LoginView">
+  <Grid Background="{DynamicResource AppBg}">
+    <Border Classes="card" Width="400" Padding="32"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+      <StackPanel Spacing="14">
+        <Border Width="48" Height="48" CornerRadius="12" HorizontalAlignment="Center"
+                Background="{DynamicResource AccentBrush}">
+          <TextBlock Text="P" Foreground="White" FontSize="22" FontWeight="Bold"
+                     HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+        <TextBlock Classes="h1" Text="Project Studio" HorizontalAlignment="Center" />
+        <TextBlock Classes="muted" Text="Войдите в свою учётную запись"
+                   HorizontalAlignment="Center" Margin="0,0,0,10" />
+
+        <StackPanel Spacing="6">
+          <TextBlock Classes="muted" Text="Логин" />
+          <TextBox Name="LoginBox" Watermark="Введите логин" />
+        </StackPanel>
+        <StackPanel Spacing="6">
+          <TextBlock Classes="muted" Text="Пароль" />
+          <TextBox Name="PasswordBox" PasswordChar="●" Watermark="Введите пароль" />
+        </StackPanel>
+
+        <TextBlock Name="ErrorText" IsVisible="False" FontSize="12"
+                   Foreground="{DynamicResource DangerBrush}" />
+
+        <Button Classes="primary" Content="Войти" IsDefault="True"
+                HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                Margin="0,6,0,0" Click="Login_Click" />
+
+        <TextBlock Classes="muted" Text="Демо-доступ: admin / admin"
+                   HorizontalAlignment="Center" />
+      </StackPanel>
+    </Border>
+  </Grid>
+</UserControl>

@@ -1,0 +1,10 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ProjectStudio.MainWindow"
+        Title="Project Studio"
+        Width="1240" Height="780"
+        MinWidth="1040" MinHeight="680"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource AppBg}">
+	<ContentControl Name="Host" />
+</Window>

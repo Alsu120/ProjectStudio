@@ -1,0 +1,60 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.ThemeDictionaries>
+
+    <ResourceDictionary x:Key="Light">
+      <SolidColorBrush x:Key="AppBg" Color="#F4F5FA" />
+      <SolidColorBrush x:Key="SidebarBg" Color="#FFFFFF" />
+      <SolidColorBrush x:Key="CardBg" Color="#FFFFFF" />
+      <SolidColorBrush x:Key="CardBorder" Color="#E7E9F1" />
+      <SolidColorBrush x:Key="InputBg" Color="#FFFFFF" />
+      <SolidColorBrush x:Key="HoverBg" Color="#F0F1F7" />
+      <SolidColorBrush x:Key="TrackBg" Color="#E9EBF3" />
+      <SolidColorBrush x:Key="TextPrimary" Color="#1D1E2C" />
+      <SolidColorBrush x:Key="TextSecondary" Color="#7C7F93" />
+      <SolidColorBrush x:Key="AccentBrush" Color="#5B4BDB" />
+      <SolidColorBrush x:Key="AccentHover" Color="#4B3CC4" />
+      <SolidColorBrush x:Key="NavSelectedBg" Color="#EEEAFD" />
+      <SolidColorBrush x:Key="NavSelectedFg" Color="#5B4BDB" />
+      <SolidColorBrush x:Key="DangerBrush" Color="#E5384F" />
+      <SolidColorBrush x:Key="SuccessBrush" Color="#2E9E5B" />
+      <SolidColorBrush x:Key="WarnBrush" Color="#E39A12" />
+      <SolidColorBrush x:Key="BlueBrush" Color="#4C84E8" />
+      <SolidColorBrush x:Key="GreenBrush" Color="#3FB868" />
+      <SolidColorBrush x:Key="TagDesignBg" Color="#EDE9FE" />
+      <SolidColorBrush x:Key="TagDesignFg" Color="#5B4BDB" />
+      <SolidColorBrush x:Key="TagDevBg" Color="#E1EDFF" />
+      <SolidColorBrush x:Key="TagDevFg" Color="#2F6FDB" />
+      <SolidColorBrush x:Key="TagMarkBg" Color="#DEF5E5" />
+      <SolidColorBrush x:Key="TagMarkFg" Color="#2E8B4F" />
+    </ResourceDictionary>
+
+    <ResourceDictionary x:Key="Dark">
+      <SolidColorBrush x:Key="AppBg" Color="#111114" />
+      <SolidColorBrush x:Key="SidebarBg" Color="#16161A" />
+      <SolidColorBrush x:Key="CardBg" Color="#1D1D22" />
+      <SolidColorBrush x:Key="CardBorder" Color="#2B2B33" />
+      <SolidColorBrush x:Key="InputBg" Color="#16161A" />
+      <SolidColorBrush x:Key="HoverBg" Color="#26262D" />
+      <SolidColorBrush x:Key="TrackBg" Color="#2D2D36" />
+      <SolidColorBrush x:Key="TextPrimary" Color="#F2F2F7" />
+      <SolidColorBrush x:Key="TextSecondary" Color="#8E90A3" />
+      <SolidColorBrush x:Key="AccentBrush" Color="#8266F0" />
+      <SolidColorBrush x:Key="AccentHover" Color="#9378F5" />
+      <SolidColorBrush x:Key="NavSelectedBg" Color="#6D4FE0" />
+      <SolidColorBrush x:Key="NavSelectedFg" Color="#FFFFFF" />
+      <SolidColorBrush x:Key="DangerBrush" Color="#FF5C73" />
+      <SolidColorBrush x:Key="SuccessBrush" Color="#4CC98A" />
+      <SolidColorBrush x:Key="WarnBrush" Color="#F5B13D" />
+      <SolidColorBrush x:Key="BlueBrush" Color="#5B93F5" />
+      <SolidColorBrush x:Key="GreenBrush" Color="#47C56F" />
+      <SolidColorBrush x:Key="TagDesignBg" Color="#2B2450" />
+      <SolidColorBrush x:Key="TagDesignFg" Color="#B9A8FF" />
+      <SolidColorBrush x:Key="TagDevBg" Color="#1F2F4D" />
+      <SolidColorBrush x:Key="TagDevFg" Color="#7DB0FF" />
+      <SolidColorBrush x:Key="TagMarkBg" Color="#1D3A2A" />
+      <SolidColorBrush x:Key="TagMarkFg" Color="#6FD28F" />
+    </ResourceDictionary>
+
+  </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

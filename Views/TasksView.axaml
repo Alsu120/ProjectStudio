@@ -1,0 +1,102 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.TasksView">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="28" Spacing="20">
+<Grid ColumnDefinitions="*,Auto">
+  <TextBlock Classes="h1" Text="Задачи" VerticalAlignment="Center" />
+  <Button Grid.Column="1" Classes="primary" Content="+ Новая задача" />
+</Grid>
+<StackPanel Orientation="Horizontal" Spacing="8">
+  <Button Classes="primary" Content="Все" />
+  <Button Classes="ghost" Content="В работе" />
+  <Button Classes="ghost" Content="Выполненные" />
+</StackPanel>
+<Border Classes="card">
+<StackPanel>
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="false" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Разработать макет главной страницы" />
+    <TextBlock Classes="muted" Text="Avalonia UI Redesign" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag design"><TextBlock Text="Дизайн" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Высокий" VerticalAlignment="Center"
+             Foreground="{DynamicResource WarnBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="15.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="false" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Реализовать авторизацию" />
+    <TextBlock Classes="muted" Text="Мобильное приложение" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Высокий" VerticalAlignment="Center"
+             Foreground="{DynamicResource DangerBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="14.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="false" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Подготовить презентацию" />
+    <TextBlock Classes="muted" Text="Корпоративный сайт" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag mark"><TextBlock Text="Маркетинг" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Средний" VerticalAlignment="Center"
+             Foreground="{DynamicResource WarnBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="13.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="true" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Согласовать цветовую палитру" />
+    <TextBlock Classes="muted" Text="Avalonia UI Redesign" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag design"><TextBlock Text="Дизайн" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Средний" VerticalAlignment="Center"
+             Foreground="{DynamicResource WarnBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="17.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="false" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Настроить CI/CD" />
+    <TextBlock Classes="muted" Text="Мобильное приложение" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Низкий" VerticalAlignment="Center"
+             Foreground="{DynamicResource SuccessBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="20.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="false" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Написать тексты для лендинга" />
+    <TextBlock Classes="muted" Text="Корпоративный сайт" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag mark"><TextBlock Text="Маркетинг" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Средний" VerticalAlignment="Center"
+             Foreground="{DynamicResource WarnBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="22.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+<Border Classes="sep" />
+<Grid ColumnDefinitions="Auto,*,120,90,90" ColumnSpacing="12" Margin="0,10">
+  <CheckBox IsChecked="true" />
+  <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+    <TextBlock Classes="body" Text="Провести тестирование форм" />
+    <TextBlock Classes="muted" Text="Мобильное приложение" />
+  </StackPanel>
+  <ContentControl Grid.Column="2"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+  <TextBlock Grid.Column="3" FontSize="12" Text="Высокий" VerticalAlignment="Center"
+             Foreground="{DynamicResource DangerBrush}" />
+  <TextBlock Grid.Column="4" Classes="muted" Text="24.05.2024" HorizontalAlignment="Right" VerticalAlignment="Center" />
+</Grid>
+</StackPanel>
+</Border>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

@@ -1,0 +1,114 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.ProjectsView">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="28" Spacing="20">
+<Grid ColumnDefinitions="*,Auto">
+  <TextBlock Classes="h1" Text="Проекты" VerticalAlignment="Center" />
+  <Button Grid.Column="1" Classes="primary" Content="+ Новый проект" />
+</Grid>
+<WrapPanel>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="Avalonia UI Redesign" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag design"><TextBlock Text="Дизайн" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Обновление интерфейса настольного приложения" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="65" Maximum="100" Foreground="{DynamicResource AccentBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="65%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 30.06.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 4" />
+    </Grid>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="Мобильное приложение" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Кроссплатформенный клиент для iOS и Android" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="40" Maximum="100" Foreground="{DynamicResource BlueBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="40%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 15.07.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 5" />
+    </Grid>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="Корпоративный сайт" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Новый сайт компании с адаптивной вёрсткой" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="80" Maximum="100" Foreground="{DynamicResource GreenBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="80%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 10.06.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 3" />
+    </Grid>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="Маркетинговая кампания" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag mark"><TextBlock Text="Маркетинг" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Запуск рекламной кампании в социальных сетях" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="25" Maximum="100" Foreground="{DynamicResource GreenBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="25%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 31.07.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 2" />
+    </Grid>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="Дизайн-система" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag design"><TextBlock Text="Дизайн" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Единая библиотека компонентов и стилей" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="55" Maximum="100" Foreground="{DynamicResource AccentBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="55%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 20.08.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 3" />
+    </Grid>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="330" Margin="0,0,16,16">
+  <StackPanel Spacing="12">
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="h2" Text="CRM-интеграция" TextTrimming="CharacterEllipsis" />
+      <ContentControl Grid.Column="1"><Border Classes="tag dev"><TextBlock Text="Разработка" /></Border></ContentControl>
+    </Grid>
+    <TextBlock Classes="muted" Text="Интеграция с внешней CRM-системой" TextWrapping="Wrap" MinHeight="32" />
+    <Grid ColumnDefinitions="*,40" ColumnSpacing="8">
+      <ProgressBar Value="10" Maximum="100" Foreground="{DynamicResource BlueBrush}" />
+      <TextBlock Grid.Column="1" Classes="body" Text="10%" HorizontalAlignment="Right" />
+    </Grid>
+    <Grid ColumnDefinitions="*,Auto">
+      <TextBlock Classes="muted" Text="Срок: 30.09.2024" />
+      <TextBlock Grid.Column="1" Classes="muted" Text="Участников: 4" />
+    </Grid>
+  </StackPanel>
+</Border>
+</WrapPanel>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

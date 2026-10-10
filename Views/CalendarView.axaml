@@ -1,0 +1,66 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.CalendarView">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="28" Spacing="20">
+<Grid ColumnDefinitions="*,Auto">
+  <TextBlock Classes="h1" Text="Календарь" VerticalAlignment="Center" />
+  <Button Grid.Column="1" Classes="primary" Content="+ Событие" />
+</Grid>
+<Border Classes="card" Padding="0">
+  <StackPanel>
+    <Grid ColumnDefinitions="Auto,*,Auto" Margin="20,16">
+      <Button Classes="ghost" Content="‹" Padding="14,6" />
+      <TextBlock Grid.Column="1" Classes="h2" Text="Май 2024"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+      <Button Grid.Column="2" Classes="ghost" Content="›" Padding="14,6" />
+    </Grid>
+    <UniformGrid Columns="7">
+<TextBlock Classes="dayname" Text="Пн" />
+<TextBlock Classes="dayname" Text="Вт" />
+<TextBlock Classes="dayname" Text="Ср" />
+<TextBlock Classes="dayname" Text="Чт" />
+<TextBlock Classes="dayname" Text="Пт" />
+<TextBlock Classes="dayname" Text="Сб" />
+<TextBlock Classes="dayname" Text="Вс" />
+    </UniformGrid>
+    <UniformGrid Columns="7">
+<Border Classes="cell" />
+<Border Classes="cell" />
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="1" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="2" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="3" /><Border Classes="tag design chip"><TextBlock Text="Ревью макетов" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="4" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="5" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="6" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="7" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="8" /><Border Classes="tag dev chip"><TextBlock Text="Планирование спринта" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="9" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="10" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="11" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="12" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="13" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="14" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><Border Classes="today" HorizontalAlignment="Left"><TextBlock Text="15" /></Border><Border Classes="tag design chip"><TextBlock Text="Главная страница" /></Border><Border Classes="tag mark chip"><TextBlock Text="Презентация" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="16" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="17" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="18" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="19" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="20" /><Border Classes="tag dev chip"><TextBlock Text="Релиз 1.2" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="21" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="22" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="23" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="24" /><Border Classes="tag mark chip"><TextBlock Text="Встреча с клиентом" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="25" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="26" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="27" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="28" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="29" /><Border Classes="tag dev chip"><TextBlock Text="Код-ревью" /></Border></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="30" /></StackPanel></Border>
+<Border Classes="cell"><StackPanel><TextBlock Classes="body" Text="31" /></StackPanel></Border>
+<Border Classes="cell" />
+<Border Classes="cell" />
+    </UniformGrid>
+  </StackPanel>
+</Border>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

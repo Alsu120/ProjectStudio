@@ -1,0 +1,132 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ProjectStudio.Views.TeamView">
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+    <StackPanel Margin="28" Spacing="20">
+<Grid ColumnDefinitions="*,Auto">
+  <TextBlock Classes="h1" Text="Команда" VerticalAlignment="Center" />
+  <Button Grid.Column="1" Classes="primary" Content="+ Добавить участника" />
+</Grid>
+<WrapPanel>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="ИП" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Иван Петров" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Руководитель проекта" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="i.petrov@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource SuccessBrush}" />
+      <TextBlock Classes="muted" Text="В сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="АС" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Анна Смирнова" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="UI/UX дизайнер" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="a.smirnova@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource SuccessBrush}" />
+      <TextBlock Classes="muted" Text="В сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="ДК" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Дмитрий Козлов" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Frontend-разработчик" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="d.kozlov@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource WarnBrush}" />
+      <TextBlock Classes="muted" Text="Занят" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="МИ" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Мария Иванова" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Backend-разработчик" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="m.ivanova@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource SuccessBrush}" />
+      <TextBlock Classes="muted" Text="В сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="СО" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Сергей Орлов" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="QA-инженер" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="s.orlov@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource TextSecondary}" />
+      <TextBlock Classes="muted" Text="Не в сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="ЕН" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Елена Новикова" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Маркетолог" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="e.novikova@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource SuccessBrush}" />
+      <TextBlock Classes="muted" Text="В сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="АВ" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Алексей Волков" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Аналитик" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="a.volkov@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource WarnBrush}" />
+      <TextBlock Classes="muted" Text="Занят" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+<Border Classes="card" Width="250" Margin="0,0,16,16">
+  <StackPanel Spacing="6" HorizontalAlignment="Center">
+    <Border Width="64" Height="64" CornerRadius="32" Background="{DynamicResource TagDesignBg}">
+      <TextBlock Text="ОМ" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TagDesignFg}"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <TextBlock Classes="h2" Text="Ольга Мельникова" HorizontalAlignment="Center" Margin="0,8,0,0" />
+    <TextBlock Classes="muted" Text="Менеджер" HorizontalAlignment="Center" />
+    <TextBlock Classes="muted" Text="o.melnikova@studio.local" HorizontalAlignment="Center" />
+    <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Center" Margin="0,6,0,0">
+      <Ellipse Width="8" Height="8" Fill="{DynamicResource TextSecondary}" />
+      <TextBlock Classes="muted" Text="Не в сети" />
+    </StackPanel>
+  </StackPanel>
+</Border>
+</WrapPanel>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>
